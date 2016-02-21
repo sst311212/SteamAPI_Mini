@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="標頭檔\SDK">
+      <UniqueIdentifier>{0d78c9e3-f074-4bf7-ada5-f693195be8a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\OSW">
+      <UniqueIdentifier>{537ffcd2-6844-430d-88b7-0fe740afe54d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -20,29 +26,794 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GetValveAPI.h">
+    <ClInclude Include="InitInterface.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="HSteamApps.h">
-      <Filter>標頭檔</Filter>
+    <ClInclude Include="OSW\AppListCommon.h">
+      <Filter>標頭檔\OSW</Filter>
     </ClInclude>
-    <ClInclude Include="TSteamApps002.h">
-      <Filter>標頭檔</Filter>
+    <ClInclude Include="OSW\AppsCommon.h">
+      <Filter>標頭檔\OSW</Filter>
     </ClInclude>
-    <ClInclude Include="TSteamApps003.h">
-      <Filter>標頭檔</Filter>
+    <ClInclude Include="OSW\AppTicketCommon.h">
+      <Filter>標頭檔\OSW</Filter>
     </ClInclude>
-    <ClInclude Include="TSteamApps004.h">
-      <Filter>標頭檔</Filter>
+    <ClInclude Include="OSW\BillingCommon.h">
+      <Filter>標頭檔\OSW</Filter>
     </ClInclude>
-    <ClInclude Include="TSteamApps005.h">
-      <Filter>標頭檔</Filter>
+    <ClInclude Include="OSW\BridgeCommon.h">
+      <Filter>標頭檔\OSW</Filter>
     </ClInclude>
-    <ClInclude Include="TSteamApps006.h">
-      <Filter>標頭檔</Filter>
+    <ClInclude Include="OSW\CCallback.h">
+      <Filter>標頭檔\OSW</Filter>
     </ClInclude>
-    <ClInclude Include="TSteamApps007.h">
-      <Filter>標頭檔</Filter>
+    <ClInclude Include="OSW\CGameID.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ClientCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ContentServerCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ControllerCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\CSteamAPIContext.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\CSteamID.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ECurrencyCode.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\EResult.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamAppUpdateStatsQueryType.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamBufferMethod.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamError.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamFindFilter.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamNotify.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamPaymentCardType.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamSeekMethod.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamServerType.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamSubscriptionBillingInfoType.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ESteamSubscriptionStatus.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\EVoiceResult.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\FriendGameInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\FriendsCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\GameCoordinatorCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\GameServerCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\gameserveritem.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\GameServerStatsCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\GameStatsCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\HTMLSurfaceCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\HTTPCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientAppManager.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientApps.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientAudio.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientBilling.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientConfigStore.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientContentServer.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientDepotBuilder.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientDeviceAuth.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientEngine.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientFriends.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientGameCoordinator.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientGameServer.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientGameServerStats.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientGameStats.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientHTTP.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientMasterServerUpdater.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientMatchmaking.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientMatchmakingServers.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientNetworkDeviceManager.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientNetworking.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientRemoteStorage.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientScreenshots.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientStreamLauncher.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientUnifiedMessages.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientUser.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientUserStats.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\IClientUtils.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\Interface_OSW.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\InventoryCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteam2Bridge001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteam2Bridge002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteam003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteam004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteam005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteam006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamAppList001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamApps001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamApps002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamApps003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamApps004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamApps005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamApps006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamApps007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamAppTicket001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamBilling001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamBilling002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient008.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient009.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient010.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient011.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient012.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient014.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient015.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient016.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamClient017.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamContentServer001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamContentServer002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamController001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamController003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends008.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends009.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends010.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends011.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends012.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends013.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends014.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamFriends015.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameCoordinator001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer008.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer009.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer010.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer011.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServer012.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameServerStats001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamGameStats001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamHTMLSurface002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamHTMLSurface003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamHTTP001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamHTTP002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamInventory001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMasterServerUpdater001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking008.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmaking009.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmakingServers001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMatchmakingServers002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMusic001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamMusicRemote001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamNetworking001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamNetworking002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamNetworking003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamNetworking004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamNetworking005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamOAuth001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage008.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage009.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage010.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage011.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage012.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamRemoteStorage013.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamScreenshots001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamScreenshots002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamStreamLauncher001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUGC001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUGC002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUGC003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUGC004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUGC005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUGC007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUnifiedMessages001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser008.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser009.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser010.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser011.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser012.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser013.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser014.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser015.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser016.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser017.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUser018.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats008.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats009.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats010.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUserStats011.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUtils001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUtils002.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUtils003.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUtils004.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUtils005.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUtils006.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamUtils007.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ISteamVideo001.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\MasterServerUpdaterCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\MatchmakingCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\MatchMakingKeyValuePair.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\MatchmakingServersCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\MusicCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\MusicRemoteCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\NetworkingCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\OAuthCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\POSIXLibrary.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\RemoteStorageCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\ScreenshotsCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\servernetadr.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\Steam.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\SteamAPI.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\Steamclient.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\SteamclientAPI.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\SteamSalt.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\SteamTypes.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\Steamworks.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\StreamLauncherCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamApp.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamAppDependencyInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamAppLaunchOption.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamAppStats.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamAppVersion.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamDiscountQualifier.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamElemInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamError.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamExternalBillingInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamGlobalUserID.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamOfflineStatus.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamPaymentCardInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamPaymentCardReceiptInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamPrepurchaseInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamPrepurchaseReceiptInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamProgress.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamSplitLocalUserID.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamSubscription.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamSubscriptionBillingInfo.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamSubscriptionDiscount.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamSubscriptionReceipt.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamSubscriptionStats.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\TSteamUpdateStats.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\UGCCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\UnifiedMessagesCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\UserCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\UserStatsCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\UtilsCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\VideoCommon.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="OSW\Win32Library.h">
+      <Filter>標頭檔\OSW</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\TSteamApps002.h">
+      <Filter>標頭檔\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\TSteamApps003.h">
+      <Filter>標頭檔\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\TSteamApps004.h">
+      <Filter>標頭檔\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\TSteamApps005.h">
+      <Filter>標頭檔\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\TSteamApps006.h">
+      <Filter>標頭檔\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\TSteamApps007.h">
+      <Filter>標頭檔\SDK</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>標頭檔</Filter>

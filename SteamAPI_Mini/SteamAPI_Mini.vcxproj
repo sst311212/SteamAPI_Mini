@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3BB852E1-821A-4853-ABA1-FB0A63CCBEBE}</ProjectGuid>
+    <ProjectGuid>{92AB8E8C-48A4-40D7-B23F-F72AC07592F1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SteamAPI_Mini</RootNamespace>
   </PropertyGroup>
@@ -68,11 +68,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>steam_api</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>steam_api64</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -88,7 +86,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SteamAPI_Mini_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;STEAMAPI_MINI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -101,7 +99,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SteamAPI_Mini_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;STEAMAPI_MINI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -116,7 +114,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SteamAPI_Mini_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;STEAMAPI_MINI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -133,7 +131,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SteamAPI_Mini_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;STEAMAPI_MINI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -146,15 +144,270 @@
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GetValveAPI.h" />
-    <ClInclude Include="HSteamApps.h" />
+    <ClInclude Include="InitInterface.h" />
+    <ClInclude Include="OSW\AppListCommon.h" />
+    <ClInclude Include="OSW\AppsCommon.h" />
+    <ClInclude Include="OSW\AppTicketCommon.h" />
+    <ClInclude Include="OSW\BillingCommon.h" />
+    <ClInclude Include="OSW\BridgeCommon.h" />
+    <ClInclude Include="OSW\CCallback.h" />
+    <ClInclude Include="OSW\CGameID.h" />
+    <ClInclude Include="OSW\ClientCommon.h" />
+    <ClInclude Include="OSW\ContentServerCommon.h" />
+    <ClInclude Include="OSW\ControllerCommon.h" />
+    <ClInclude Include="OSW\CSteamAPIContext.h" />
+    <ClInclude Include="OSW\CSteamID.h" />
+    <ClInclude Include="OSW\ECurrencyCode.h" />
+    <ClInclude Include="OSW\EResult.h" />
+    <ClInclude Include="OSW\ESteamAppUpdateStatsQueryType.h" />
+    <ClInclude Include="OSW\ESteamBufferMethod.h" />
+    <ClInclude Include="OSW\ESteamError.h" />
+    <ClInclude Include="OSW\ESteamFindFilter.h" />
+    <ClInclude Include="OSW\ESteamNotify.h" />
+    <ClInclude Include="OSW\ESteamPaymentCardType.h" />
+    <ClInclude Include="OSW\ESteamSeekMethod.h" />
+    <ClInclude Include="OSW\ESteamServerType.h" />
+    <ClInclude Include="OSW\ESteamSubscriptionBillingInfoType.h" />
+    <ClInclude Include="OSW\ESteamSubscriptionStatus.h" />
+    <ClInclude Include="OSW\EVoiceResult.h" />
+    <ClInclude Include="OSW\FriendGameInfo.h" />
+    <ClInclude Include="OSW\FriendsCommon.h" />
+    <ClInclude Include="OSW\GameCoordinatorCommon.h" />
+    <ClInclude Include="OSW\GameServerCommon.h" />
+    <ClInclude Include="OSW\gameserveritem.h" />
+    <ClInclude Include="OSW\GameServerStatsCommon.h" />
+    <ClInclude Include="OSW\GameStatsCommon.h" />
+    <ClInclude Include="OSW\HTMLSurfaceCommon.h" />
+    <ClInclude Include="OSW\HTTPCommon.h" />
+    <ClInclude Include="OSW\IClientAppManager.h" />
+    <ClInclude Include="OSW\IClientApps.h" />
+    <ClInclude Include="OSW\IClientAudio.h" />
+    <ClInclude Include="OSW\IClientBilling.h" />
+    <ClInclude Include="OSW\IClientConfigStore.h" />
+    <ClInclude Include="OSW\IClientContentServer.h" />
+    <ClInclude Include="OSW\IClientDepotBuilder.h" />
+    <ClInclude Include="OSW\IClientDeviceAuth.h" />
+    <ClInclude Include="OSW\IClientEngine.h" />
+    <ClInclude Include="OSW\IClientFriends.h" />
+    <ClInclude Include="OSW\IClientGameCoordinator.h" />
+    <ClInclude Include="OSW\IClientGameServer.h" />
+    <ClInclude Include="OSW\IClientGameServerStats.h" />
+    <ClInclude Include="OSW\IClientGameStats.h" />
+    <ClInclude Include="OSW\IClientHTTP.h" />
+    <ClInclude Include="OSW\IClientMasterServerUpdater.h" />
+    <ClInclude Include="OSW\IClientMatchmaking.h" />
+    <ClInclude Include="OSW\IClientMatchmakingServers.h" />
+    <ClInclude Include="OSW\IClientNetworkDeviceManager.h" />
+    <ClInclude Include="OSW\IClientNetworking.h" />
+    <ClInclude Include="OSW\IClientRemoteStorage.h" />
+    <ClInclude Include="OSW\IClientScreenshots.h" />
+    <ClInclude Include="OSW\IClientStreamLauncher.h" />
+    <ClInclude Include="OSW\IClientUnifiedMessages.h" />
+    <ClInclude Include="OSW\IClientUser.h" />
+    <ClInclude Include="OSW\IClientUserStats.h" />
+    <ClInclude Include="OSW\IClientUtils.h" />
+    <ClInclude Include="OSW\Interface_OSW.h" />
+    <ClInclude Include="OSW\InventoryCommon.h" />
+    <ClInclude Include="OSW\ISteam003.h" />
+    <ClInclude Include="OSW\ISteam004.h" />
+    <ClInclude Include="OSW\ISteam005.h" />
+    <ClInclude Include="OSW\ISteam006.h" />
+    <ClInclude Include="OSW\ISteam2Bridge001.h" />
+    <ClInclude Include="OSW\ISteam2Bridge002.h" />
+    <ClInclude Include="OSW\ISteamAppList001.h" />
+    <ClInclude Include="OSW\ISteamApps001.h" />
+    <ClInclude Include="OSW\ISteamApps002.h" />
+    <ClInclude Include="OSW\ISteamApps003.h" />
+    <ClInclude Include="OSW\ISteamApps004.h" />
+    <ClInclude Include="OSW\ISteamApps005.h" />
+    <ClInclude Include="OSW\ISteamApps006.h" />
+    <ClInclude Include="OSW\ISteamApps007.h" />
+    <ClInclude Include="OSW\ISteamAppTicket001.h" />
+    <ClInclude Include="OSW\ISteamBilling001.h" />
+    <ClInclude Include="OSW\ISteamBilling002.h" />
+    <ClInclude Include="OSW\ISteamClient006.h" />
+    <ClInclude Include="OSW\ISteamClient007.h" />
+    <ClInclude Include="OSW\ISteamClient008.h" />
+    <ClInclude Include="OSW\ISteamClient009.h" />
+    <ClInclude Include="OSW\ISteamClient010.h" />
+    <ClInclude Include="OSW\ISteamClient011.h" />
+    <ClInclude Include="OSW\ISteamClient012.h" />
+    <ClInclude Include="OSW\ISteamClient014.h" />
+    <ClInclude Include="OSW\ISteamClient015.h" />
+    <ClInclude Include="OSW\ISteamClient016.h" />
+    <ClInclude Include="OSW\ISteamClient017.h" />
+    <ClInclude Include="OSW\ISteamContentServer001.h" />
+    <ClInclude Include="OSW\ISteamContentServer002.h" />
+    <ClInclude Include="OSW\ISteamController001.h" />
+    <ClInclude Include="OSW\ISteamController003.h" />
+    <ClInclude Include="OSW\ISteamFriends001.h" />
+    <ClInclude Include="OSW\ISteamFriends002.h" />
+    <ClInclude Include="OSW\ISteamFriends003.h" />
+    <ClInclude Include="OSW\ISteamFriends004.h" />
+    <ClInclude Include="OSW\ISteamFriends005.h" />
+    <ClInclude Include="OSW\ISteamFriends006.h" />
+    <ClInclude Include="OSW\ISteamFriends007.h" />
+    <ClInclude Include="OSW\ISteamFriends008.h" />
+    <ClInclude Include="OSW\ISteamFriends009.h" />
+    <ClInclude Include="OSW\ISteamFriends010.h" />
+    <ClInclude Include="OSW\ISteamFriends011.h" />
+    <ClInclude Include="OSW\ISteamFriends012.h" />
+    <ClInclude Include="OSW\ISteamFriends013.h" />
+    <ClInclude Include="OSW\ISteamFriends014.h" />
+    <ClInclude Include="OSW\ISteamFriends015.h" />
+    <ClInclude Include="OSW\ISteamGameCoordinator001.h" />
+    <ClInclude Include="OSW\ISteamGameServer002.h" />
+    <ClInclude Include="OSW\ISteamGameServer003.h" />
+    <ClInclude Include="OSW\ISteamGameServer004.h" />
+    <ClInclude Include="OSW\ISteamGameServer005.h" />
+    <ClInclude Include="OSW\ISteamGameServer006.h" />
+    <ClInclude Include="OSW\ISteamGameServer007.h" />
+    <ClInclude Include="OSW\ISteamGameServer008.h" />
+    <ClInclude Include="OSW\ISteamGameServer009.h" />
+    <ClInclude Include="OSW\ISteamGameServer010.h" />
+    <ClInclude Include="OSW\ISteamGameServer011.h" />
+    <ClInclude Include="OSW\ISteamGameServer012.h" />
+    <ClInclude Include="OSW\ISteamGameServerStats001.h" />
+    <ClInclude Include="OSW\ISteamGameStats001.h" />
+    <ClInclude Include="OSW\ISteamHTMLSurface002.h" />
+    <ClInclude Include="OSW\ISteamHTMLSurface003.h" />
+    <ClInclude Include="OSW\ISteamHTTP001.h" />
+    <ClInclude Include="OSW\ISteamHTTP002.h" />
+    <ClInclude Include="OSW\ISteamInventory001.h" />
+    <ClInclude Include="OSW\ISteamMasterServerUpdater001.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking001.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking002.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking003.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking004.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking005.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking006.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking007.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking008.h" />
+    <ClInclude Include="OSW\ISteamMatchmaking009.h" />
+    <ClInclude Include="OSW\ISteamMatchmakingServers001.h" />
+    <ClInclude Include="OSW\ISteamMatchmakingServers002.h" />
+    <ClInclude Include="OSW\ISteamMusic001.h" />
+    <ClInclude Include="OSW\ISteamMusicRemote001.h" />
+    <ClInclude Include="OSW\ISteamNetworking001.h" />
+    <ClInclude Include="OSW\ISteamNetworking002.h" />
+    <ClInclude Include="OSW\ISteamNetworking003.h" />
+    <ClInclude Include="OSW\ISteamNetworking004.h" />
+    <ClInclude Include="OSW\ISteamNetworking005.h" />
+    <ClInclude Include="OSW\ISteamOAuth001.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage001.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage002.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage003.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage004.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage005.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage006.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage007.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage008.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage009.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage010.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage011.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage012.h" />
+    <ClInclude Include="OSW\ISteamRemoteStorage013.h" />
+    <ClInclude Include="OSW\ISteamScreenshots001.h" />
+    <ClInclude Include="OSW\ISteamScreenshots002.h" />
+    <ClInclude Include="OSW\ISteamStreamLauncher001.h" />
+    <ClInclude Include="OSW\ISteamUGC001.h" />
+    <ClInclude Include="OSW\ISteamUGC002.h" />
+    <ClInclude Include="OSW\ISteamUGC003.h" />
+    <ClInclude Include="OSW\ISteamUGC004.h" />
+    <ClInclude Include="OSW\ISteamUGC005.h" />
+    <ClInclude Include="OSW\ISteamUGC007.h" />
+    <ClInclude Include="OSW\ISteamUnifiedMessages001.h" />
+    <ClInclude Include="OSW\ISteamUser004.h" />
+    <ClInclude Include="OSW\ISteamUser005.h" />
+    <ClInclude Include="OSW\ISteamUser006.h" />
+    <ClInclude Include="OSW\ISteamUser007.h" />
+    <ClInclude Include="OSW\ISteamUser008.h" />
+    <ClInclude Include="OSW\ISteamUser009.h" />
+    <ClInclude Include="OSW\ISteamUser010.h" />
+    <ClInclude Include="OSW\ISteamUser011.h" />
+    <ClInclude Include="OSW\ISteamUser012.h" />
+    <ClInclude Include="OSW\ISteamUser013.h" />
+    <ClInclude Include="OSW\ISteamUser014.h" />
+    <ClInclude Include="OSW\ISteamUser015.h" />
+    <ClInclude Include="OSW\ISteamUser016.h" />
+    <ClInclude Include="OSW\ISteamUser017.h" />
+    <ClInclude Include="OSW\ISteamUser018.h" />
+    <ClInclude Include="OSW\ISteamUserStats001.h" />
+    <ClInclude Include="OSW\ISteamUserStats002.h" />
+    <ClInclude Include="OSW\ISteamUserStats003.h" />
+    <ClInclude Include="OSW\ISteamUserStats004.h" />
+    <ClInclude Include="OSW\ISteamUserStats005.h" />
+    <ClInclude Include="OSW\ISteamUserStats006.h" />
+    <ClInclude Include="OSW\ISteamUserStats007.h" />
+    <ClInclude Include="OSW\ISteamUserStats008.h" />
+    <ClInclude Include="OSW\ISteamUserStats009.h" />
+    <ClInclude Include="OSW\ISteamUserStats010.h" />
+    <ClInclude Include="OSW\ISteamUserStats011.h" />
+    <ClInclude Include="OSW\ISteamUtils001.h" />
+    <ClInclude Include="OSW\ISteamUtils002.h" />
+    <ClInclude Include="OSW\ISteamUtils003.h" />
+    <ClInclude Include="OSW\ISteamUtils004.h" />
+    <ClInclude Include="OSW\ISteamUtils005.h" />
+    <ClInclude Include="OSW\ISteamUtils006.h" />
+    <ClInclude Include="OSW\ISteamUtils007.h" />
+    <ClInclude Include="OSW\ISteamVideo001.h" />
+    <ClInclude Include="OSW\MasterServerUpdaterCommon.h" />
+    <ClInclude Include="OSW\MatchmakingCommon.h" />
+    <ClInclude Include="OSW\MatchMakingKeyValuePair.h" />
+    <ClInclude Include="OSW\MatchmakingServersCommon.h" />
+    <ClInclude Include="OSW\MusicCommon.h" />
+    <ClInclude Include="OSW\MusicRemoteCommon.h" />
+    <ClInclude Include="OSW\NetworkingCommon.h" />
+    <ClInclude Include="OSW\OAuthCommon.h" />
+    <ClInclude Include="OSW\POSIXLibrary.h" />
+    <ClInclude Include="OSW\RemoteStorageCommon.h" />
+    <ClInclude Include="OSW\ScreenshotsCommon.h" />
+    <ClInclude Include="OSW\servernetadr.h" />
+    <ClInclude Include="OSW\Steam.h" />
+    <ClInclude Include="OSW\SteamAPI.h" />
+    <ClInclude Include="OSW\Steamclient.h" />
+    <ClInclude Include="OSW\SteamclientAPI.h" />
+    <ClInclude Include="OSW\SteamSalt.h" />
+    <ClInclude Include="OSW\SteamTypes.h" />
+    <ClInclude Include="OSW\Steamworks.h" />
+    <ClInclude Include="OSW\StreamLauncherCommon.h" />
+    <ClInclude Include="OSW\TSteamApp.h" />
+    <ClInclude Include="OSW\TSteamAppDependencyInfo.h" />
+    <ClInclude Include="OSW\TSteamAppLaunchOption.h" />
+    <ClInclude Include="OSW\TSteamAppStats.h" />
+    <ClInclude Include="OSW\TSteamAppVersion.h" />
+    <ClInclude Include="OSW\TSteamDiscountQualifier.h" />
+    <ClInclude Include="OSW\TSteamElemInfo.h" />
+    <ClInclude Include="OSW\TSteamError.h" />
+    <ClInclude Include="OSW\TSteamExternalBillingInfo.h" />
+    <ClInclude Include="OSW\TSteamGlobalUserID.h" />
+    <ClInclude Include="OSW\TSteamOfflineStatus.h" />
+    <ClInclude Include="OSW\TSteamPaymentCardInfo.h" />
+    <ClInclude Include="OSW\TSteamPaymentCardReceiptInfo.h" />
+    <ClInclude Include="OSW\TSteamPrepurchaseInfo.h" />
+    <ClInclude Include="OSW\TSteamPrepurchaseReceiptInfo.h" />
+    <ClInclude Include="OSW\TSteamProgress.h" />
+    <ClInclude Include="OSW\TSteamSplitLocalUserID.h" />
+    <ClInclude Include="OSW\TSteamSubscription.h" />
+    <ClInclude Include="OSW\TSteamSubscriptionBillingInfo.h" />
+    <ClInclude Include="OSW\TSteamSubscriptionDiscount.h" />
+    <ClInclude Include="OSW\TSteamSubscriptionReceipt.h" />
+    <ClInclude Include="OSW\TSteamSubscriptionStats.h" />
+    <ClInclude Include="OSW\TSteamUpdateStats.h" />
+    <ClInclude Include="OSW\UGCCommon.h" />
+    <ClInclude Include="OSW\UnifiedMessagesCommon.h" />
+    <ClInclude Include="OSW\UserCommon.h" />
+    <ClInclude Include="OSW\UserStatsCommon.h" />
+    <ClInclude Include="OSW\UtilsCommon.h" />
+    <ClInclude Include="OSW\VideoCommon.h" />
+    <ClInclude Include="OSW\Win32Library.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="TSteamApps002.h" />
-    <ClInclude Include="TSteamApps003.h" />
-    <ClInclude Include="TSteamApps004.h" />
-    <ClInclude Include="TSteamApps005.h" />
-    <ClInclude Include="TSteamApps006.h" />
-    <ClInclude Include="TSteamApps007.h" />
+    <ClInclude Include="SDK\TSteamApps002.h" />
+    <ClInclude Include="SDK\TSteamApps003.h" />
+    <ClInclude Include="SDK\TSteamApps004.h" />
+    <ClInclude Include="SDK\TSteamApps005.h" />
+    <ClInclude Include="SDK\TSteamApps006.h" />
+    <ClInclude Include="SDK\TSteamApps007.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
